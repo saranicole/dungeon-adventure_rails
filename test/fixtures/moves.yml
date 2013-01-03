@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  outcome: MyText
+  room: 
+  direction: MyString
+
+two:
+  outcome: MyText
+  room: 
+  direction: MyString

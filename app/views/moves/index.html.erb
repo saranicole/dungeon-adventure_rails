@@ -1,0 +1,21 @@
+<h1>Listing Moves</h1>
+
+<table>
+  <tr>
+    <th>Direction</th>
+    <th>Outcome</th>
+  </tr>
+
+<% @game.moves.each do |move| %>
+  <tr>
+    <td><%= move.direction %></td>
+    <td><%= move.outcome %></td>
+    <td><%= link_to 'Show', move %></td>
+    <td><%= link_to 'Destroy', move, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Move', new_move_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  race: MyString
+  stats: 1
+  health: 1
+  game: 
+  location: MyString
+
+two:
+  name: MyString
+  race: MyString
+  stats: 1
+  health: 1
+  game: 
+  location: MyString

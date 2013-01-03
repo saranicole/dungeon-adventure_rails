@@ -1,0 +1,9 @@
+<%= form_for([@game, @game.moves.build]) do |f| %>
+  <div class="field">
+    <%= f.label :direction %><br />
+    <%= f.select :direction, options_for_select([:North, :West, :East, :South]) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

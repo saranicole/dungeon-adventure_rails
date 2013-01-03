@@ -1,0 +1,22 @@
+<h1>Listing Games</h1>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Dungeon</th>
+
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%= render game.player %></td>
+    <td><%= game.dungeon.name %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Destroy', game, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Game', new_game_path %>

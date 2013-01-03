@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dungeon.name %>
+</p>
+
+<p>
+  <b>Numenemies:</b>
+  <%= @dungeon.numEnemies %>
+</p>
+
+<p id="notice"><%= notice %></p>
+ 
+<p>
+  <b>Name:</b>
+  <%= @dungeon.name %>
+</p>
+
+<h2>Rooms</h2>
+<%= render @dungeon.rooms %>
+
+<h2>Add a room:</h2>
+<%= render "rooms/form" %>
+
+<%= link_to 'Edit', edit_dungeon_path(@dungeon) %> |
+<%= link_to 'Back', dungeons_path %>

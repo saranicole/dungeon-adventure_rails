@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  numEnemies: 1
+  iorooms: MyString
+
+two:
+  name: MyString
+  numEnemies: 1
+  iorooms: MyString

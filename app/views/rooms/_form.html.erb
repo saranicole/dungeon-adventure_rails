@@ -1,0 +1,21 @@
+<%= form_for([@dungeon, @dungeon.rooms.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :entrance %><br />
+    <%= f.text_field :entrance %>
+  </div>
+  <div class="field">
+    <%= f.label :exit %><br />
+    <%= f.text_field :exit %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

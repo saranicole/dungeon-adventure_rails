@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Players</h2>
+<%= render @player %>
+
+<h2>Add a player:</h2>
+<%= render "players/form" %>
+
+<%= link_to 'Edit', edit_player_path(@game) %> |
+<%= link_to 'Back', players_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<b>Player:</b>
+  <%= render @player %><br />
+  <b>Dungeon:</b>
+  <%= @game.dungeon.name %><br />
+  <% if @game.over? %>
+<h2>Game Over!</h2>
+<%= link_to 'New Game', new_game_path %>
+<%= link_to 'Back', games_path %>
+<% else %>
+  <b>Roomindex:</b>
+  <%= @game.roomindex %>
+
+</p>
+
+
+<p id="notice"><%= notice %></p>
+<h2>Add a move:</h2>
+<%= render "moves/form" %>
+<% end %>
+
+<h2>Moves</h2>
+<%= render @moves %>
+
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
